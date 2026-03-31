@@ -13,15 +13,48 @@ list_of_files = [
 
     # Main Application
     "app/__init__.py",
+    "app/main.py",
 
     # Configurations and Security
     "app/core/__init__.py",
     "app/core/config.py",
     "app/core/security.py",
+    "app/core/dependencies.py",
+    "app/core/exceptions.py",
+
+    # FastApi API
+    "app/api/__init__.py",
+    "app/api/routes_auth.py",
+    "app/api/routes_predict.py",
+
+    # Caching
+    "app/cache/__init__.py",
+    "app/cache/redis_cache.py",
+
+    # Middlewares
+    "app/middlewares/__init__.py",
+    "app/middlewares/logging_middleware.py",
+
+    # Saved Models
+    "app/models/.gitkeep",
+
+    # Services
+    "app/services/__init__.py"
+    "app/services/model_service.py"
 
     # Notebooks
     "notebooks/experimets.ipynb",
 
+    # Utils
+    "app/utils/__init__.py",
+    "app/utils/logger.py",
+
+    # Training Scripts
+    "train/__init__.py",
+    "train/train_model.py",
+    "train/utils.py",
+
+    # Others
     "setup.py",
     "requirements.txt",
     ".env",
