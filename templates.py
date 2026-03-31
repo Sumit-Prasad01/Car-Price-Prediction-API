@@ -9,7 +9,8 @@ project_name = "policy_lens_agent"
 list_of_files = [
 
     # Data
-    "data/.gitkeep",
+    "data/raw/.gitkeep",
+    "data/processed/.gitkeep",
 
     # Main Application
     "app/__init__.py",
@@ -39,8 +40,8 @@ list_of_files = [
     "app/models/.gitkeep",
 
     # Services
-    "app/services/__init__.py"
-    "app/services/model_service.py"
+    "app/services/__init__.py",
+    "app/services/model_service.py",
 
     # Notebooks
     "notebooks/experimets.ipynb",
@@ -51,8 +52,10 @@ list_of_files = [
 
     # Training Scripts
     "train/__init__.py",
-    "train/train_model.py",
-    "train/train_utils.py",
+    "train/data_ingestion.py",
+    "train/data_processor.py",
+    "train/model_trainer.py",
+    "train/model_config.py",
 
     # Others
     "setup.py",
