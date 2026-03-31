@@ -52,7 +52,7 @@ list_of_files = [
     # Training Scripts
     "train/__init__.py",
     "train/train_model.py",
-    "train/utils.py",
+    "train/train_utils.py",
 
     # Others
     "setup.py",
