@@ -1,2 +1,4 @@
-DATASET_PATH = "data/raw/car-details.csv"
-MODEL_PATH = 'app/models/model.pkl'
+DATASET_PATH : str = "data/raw/car-details.csv"
+MODEL_PATH : str = 'app/models/model.pkl'
+
+PROCESSED_DATA_PATH : str = "data/processed"
