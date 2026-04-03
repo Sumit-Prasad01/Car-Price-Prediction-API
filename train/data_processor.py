@@ -61,10 +61,10 @@ class DataPreprocessor:
 
             logger.info("Saving splitted data....")
 
-            joblib.dump(X_train, f"{self.artifacts_path}/X_train.pkl")
-            joblib.dump(X_test, f"{self.artifacts_path}/X_test.pkl")
-            joblib.dump(y_train, f"{self.artifacts_path}/y_train.pkl")
-            joblib.dump(y_test, f"{self.artifacts_path}/y_test.pkl")
+            joblib.dump(X_train, f"{self.artifacts_path}/X_train.joblib")
+            joblib.dump(X_test, f"{self.artifacts_path}/X_test.joblib")
+            joblib.dump(y_train, f"{self.artifacts_path}/y_train.joblib")
+            joblib.dump(y_test, f"{self.artifacts_path}/y_test.joblib")
 
             logger.info("Splitted data saved successfully.")
 

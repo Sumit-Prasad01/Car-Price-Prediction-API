@@ -32,10 +32,10 @@ class ModelTrainer:
         try:
             logger.info("Loading splitted data.......")
 
-            self.X_train = joblib.load(f"{self.artifacts_path}/X_train.pkl")
-            self.X_test = joblib.load(f"{self.artifacts_path}/X_test.pkl")
-            self.y_train = joblib.load(f"{self.artifacts_path}/y_train.pkl")
-            self.y_test = joblib.load(f"{self.artifacts_path}/y_test.pkl")
+            self.X_train = joblib.load(f"{self.artifacts_path}/X_train.joblib")
+            self.X_test = joblib.load(f"{self.artifacts_path}/X_test.joblib")
+            self.y_train = joblib.load(f"{self.artifacts_path}/y_train.joblib")
+            self.y_test = joblib.load(f"{self.artifacts_path}/y_test.joblib")
 
             logger.info("Splitted data loaded successfully.")
 
