@@ -2,7 +2,7 @@ import json
 import redis
 from app.core.config import settings
 
-redis_client = redis.StrictRedis.from_url(settings.REDIS_URL, decode_response = True)
+redis_client = redis.StrictRedis.from_url(settings.REDIS_URL, decode_responses = True)
 
 
 def get_cached_prediction(key : str):
